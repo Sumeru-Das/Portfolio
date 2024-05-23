@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/all";
 import { gsap } from "gsap";
 import Heading from "../ui/Heading";
 
-export default function Contact() {
+export default function Contact({ forwardedRef }) {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
 
   const heading = useRef(null);
@@ -43,6 +43,7 @@ export default function Contact() {
 
   return (
     <section
+      ref={forwardedRef}
       id="contact"
       className="my-[15%] h-[55vh] overflow-hidden"
       aria-label="contact me"
@@ -63,7 +64,8 @@ export default function Contact() {
             className="mt-4 max-w-md translate-y-10 text-body-2 text-accent-100 opacity-0 2xl:max-w-2xl 2xl:text-4xl"
           >
             Currently looking for <br />
-            <span className="font-medium">Full-Stack Development</span> opportunities
+            <span className="font-medium">Full-Stack Development</span>{" "}
+            opportunities
           </p>
         </div>
         <div className="col-span-2 grid grid-cols-1 gap-x-4 gap-y-8 text-accent-300 sm:grid-cols-2 sm:gap-y-0 md:grid-cols-1 ">

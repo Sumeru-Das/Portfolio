@@ -5,11 +5,11 @@ export default function Role({ forwardedRef }) {
     <section
       ref={forwardedRef}
       id="about"
-      className="nav-change my-10 flex select-none flex-col items-center justify-center overflow-hidden py-5 md:my-[1%] "
+      className="nav-change my-10 flex h-screen select-none flex-col items-center justify-center gap-20 overflow-hidden px-5 py-5 md:my-[1%] md:px-10 xl:px-20 2xl:px-28"
       aria-label=""
     >
       <div className="flex w-full items-center space-x-20">
-        <h1 className="text-heading-1 font-medium leading-[1.25em] text-secondary-400 md:leading-[1.08em]">
+        <h1 className="text-heading-2 font-medium leading-[1.25em] text-secondary-400 md:leading-[1.08em]">
           Passionate about coding, collaboration, and leveraging technology to
           create meaningful solutions.
         </h1>
@@ -32,7 +32,7 @@ export default function Role({ forwardedRef }) {
         <span className="mr-2 rounded-2xl bg-[#FFFFFF] px-3 text-heading-3 text-[#000000]">
           Technologies
         </span>{" "}
-        I am familiar with .
+        I am familiar with ...
       </h1>
     </section>
   );
