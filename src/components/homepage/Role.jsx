@@ -10,8 +10,9 @@ export default function Role({ forwardedRef }) {
     >
       <div className="flex w-full items-center space-x-20">
         <h1 className="text-heading-2 font-medium leading-[1.25em] text-secondary-400 md:leading-[1.08em]">
-          Passionate about coding, collaboration, and leveraging technology to
-          create meaningful solutions.
+          Passionate about coding, <br />
+          collaboration, and leveraging technology <br />
+          to create meaningful solutions.
         </h1>
       </div>
       <div className="scrollbar mx-[9rem] gap-10 overflow-x-scroll rounded-2xl py-[5rem]">

@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/all";
 import { gsap } from "gsap";
 import Heading from "../ui/Heading";
 
-export default function Contact({ forwardedRef }) {
+export default function Contact() {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
 
   const heading = useRef(null);
@@ -43,14 +43,13 @@ export default function Contact({ forwardedRef }) {
 
   return (
     <section
-      ref={forwardedRef}
       id="contact"
-      className="my-[15%] h-[55vh] overflow-hidden"
+      className="my-[15%] h-[55vh] overflow-hidden md:my-[1%] px-10 md:px-10 xl:px-20 2xl:px-28"
       aria-label="contact me"
     >
       <div
         ref={contactSection}
-        className="mt-10 flex flex-col gap-20 md:grid md:grid-cols-6 md:px-12"
+        className="mt-10 flex flex-col gap-20 md:grid md:grid-cols-6 md:px-12 "
       >
         <div className="col-span-4">
           <h3
