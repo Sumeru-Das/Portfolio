@@ -12,6 +12,7 @@ import Works from "./components/homepage/Works";
 import Contact from "./components/homepage/Contact";
 import Footer from "./components/ui/Footer";
 import Preloader from "./components/PreLoader/PreLoader";
+import Skills from "./components/homepage/Skills";
 
 const App = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -62,12 +63,10 @@ const App = () => {
           {isLoading && <Preloader />}
         </AnimatePresence>
       </div>
-      <NavBar sectionRefs={sectionRefs.current} />{" "}
-      {/* passing sectionRefs props to give access to Navbar, Navbar can then access the props which have access to the array of sectionRef and loop over it */}
-      <Hero />
+      <NavBar sectionRefs={sectionRefs.current} /> <Hero />
       <main className="">
-        <Role forwardedRef={(el) => (sectionRefs.current[0] = el)} />{" "}
-        {/* forwardedRef props to pass into the child component to access the ref, then this will go into the useRef array  */}
+        <Role forwardedRef={(el) => (sectionRefs.current[0] = el)} />
+        <Skills />
         <Works forwardedRef={(el) => (sectionRefs.current[1] = el)} />
         <Contact />
       </main>

@@ -40,24 +40,8 @@
   }
 
   @font-face {
-    font-family: "CabinetGrotesk-Variable";
-    src: url("./assets/fonts/CabinetGrotesk-Variable.ttf") format("truetype");
-    font-weight: 100 900;
-    font-display: swap;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "GeneralSans-Variable";
-    src: url("./assets/fonts/GeneralSans-Variable.ttf") format("truetype");
-    font-weight: 200 700;
-    font-display: swap;
-    font-style: normal;
-  }
-
-  @font-face {
     font-family: "NibPro-Light";
-    src: url(../public/fonts/NibPro-Light.ttf) format("truetype");
+    src: url(../src/assets/fonts/NibPro-Light.ttf) format("truetype");
     font-weight: 200 700;
     font-display: swap;
     font-style: normal;
@@ -72,13 +56,10 @@
   h2,
   p,
   h1,
-  span {
-    @apply font-grotesk;
-  }
-
+  span,
   h3,
   h4 {
-    @apply font-general tracking-headings;
+    @apply font-logo;
   }
 
   .font-outline-4 {

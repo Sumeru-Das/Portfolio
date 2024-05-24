@@ -48,7 +48,7 @@ const Index = () => {
     },
     exit: {
       d: targetPath,
-      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 1 },
+      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0.3 },
     },
   };
 

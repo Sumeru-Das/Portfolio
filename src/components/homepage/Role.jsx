@@ -1,40 +1,19 @@
-import { iconsData } from "../ui/icons";
+import { paragraph } from "../../data";
+import TextMask from "../ui/TextMask";
+import Word from "../ui/Word";
 
-export default function Role({ forwardedRef }) {
+export default function About({ forwardedRef }) {
+  const phrases = ["About"];
   return (
-    <section
-      ref={forwardedRef}
-      id="about"
-      className="nav-change my-10 flex h-screen select-none flex-col items-center justify-center gap-20 overflow-hidden px-5 py-5 md:my-[1%] md:px-10 xl:px-20 2xl:px-28"
-      aria-label=""
-    >
-      <div className="flex w-full items-center space-x-20">
-        <h1 className="text-heading-2 font-medium leading-[1.25em] text-secondary-400 md:leading-[1.08em]">
-          Passionate about coding, <br />
-          collaboration, and leveraging technology <br />
-          to create meaningful solutions.
+    <section className="h-screen" ref={forwardedRef}>
+      <div className="flex h-full flex-col items-start gap-10 px-10">
+        <h1 className="mt-10 text-[5vw] font-semibold uppercase text-[#FFFFFF] sm:my-20 sm:text-[3vw]">
+          <TextMask>{phrases}</TextMask>
         </h1>
+        <div className="w-full mb-10">
+          <Word paragraph={paragraph} />
+        </div>
       </div>
-      <div className="scrollbar mx-[9rem] gap-10 overflow-x-scroll rounded-2xl py-[5rem]">
-        {iconsData.map((iconData) => {
-          return (
-            <img
-              className="h-[5rem] "
-              key={iconData.id}
-              src={iconData.icon}
-              alt={iconData.name}
-              title={iconData.name}
-              {...iconData}
-            />
-          );
-        })}
-      </div>
-      <h1 className="mt-10 flex items-center justify-center text-heading-3 text-[#FE5F2F]">
-        <span className="mr-2 rounded-2xl bg-[#FFFFFF] px-3 text-heading-3 text-[#000000]">
-          Technologies
-        </span>{" "}
-        I am familiar with ...
-      </h1>
     </section>
   );
 }
