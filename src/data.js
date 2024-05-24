@@ -31,4 +31,4 @@ export const iconsData = [
 ];
 
 export const paragraph =
-  "As a full-stack developer, I thrive on blending innovative ideas with seamless digital experiences. My passion for coding extends across various disciplines, from frontend design to backend development. With an insatiable curiosity for the evolving landscape of technology, I continually delve into new frameworks, languages, and methodologies. I believe in the boundless potential of creative development to shape impactful digital solutions.";
+  "As a full-stack developer, I thrive on blending innovative ideas with seamless digital experiences. My passion for coding extends across various disciplines, from frontend design to backend development. I continually delve into new frameworks, languages, and methodologies. I believe in the boundless potential of creative development to shape impactful digital solutions.";

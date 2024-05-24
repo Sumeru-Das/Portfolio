@@ -1,4 +1,3 @@
-
 .introduction {
   height: 100vh;
   width: 100vw;
@@ -20,8 +19,8 @@
   }
   p {
     display: flex;
-    color: #FE5F2F;
-    font-size: 100px;
+    color: #fe5f2f;
+    font-size: 50px;
     align-items: center;
     position: absolute;
     z-index: 1;
@@ -29,7 +28,7 @@
       display: block;
       width: 10px;
       height: 10px;
-      background-color: #FE5F2F;
+      background-color: #fe5f2f;
       border-radius: 50%;
       margin-right: 10px;
     }

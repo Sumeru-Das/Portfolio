@@ -63,7 +63,8 @@ const App = () => {
           {isLoading && <Preloader />}
         </AnimatePresence>
       </div>
-      <NavBar sectionRefs={sectionRefs.current} /> <Hero />
+      <NavBar sectionRefs={sectionRefs.current} />
+      <Hero />
       <main className="">
         <Role forwardedRef={(el) => (sectionRefs.current[0] = el)} />
         <Skills />

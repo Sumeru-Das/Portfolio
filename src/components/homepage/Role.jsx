@@ -10,7 +10,7 @@ export default function About({ forwardedRef }) {
         <h1 className="mt-10 text-[5vw] font-semibold uppercase text-[#FFFFFF] sm:my-20 sm:text-[3vw]">
           <TextMask>{phrases}</TextMask>
         </h1>
-        <div className="w-full mb-10">
+        <div className="mb-10 w-full">
           <Word paragraph={paragraph} />
         </div>
       </div>

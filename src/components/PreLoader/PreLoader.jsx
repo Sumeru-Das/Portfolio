@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import styles from "./style.module.scss";
+import { opacity, slideUp } from "../motion";
 
 const words = [
   "Namaste",
@@ -10,7 +11,6 @@ const words = [
   "Olà",
   "やあ",
   "Hallå",
-  "Guten tag",
   "Hallo",
 ];
 
@@ -23,12 +23,12 @@ const Index = () => {
   }, []);
 
   useEffect(() => {
-    if (index === words.length - 1) return;
+    if (index == words.length - 1) return;
     setTimeout(
       () => {
         setIndex(index + 1);
       },
-      index === 0 ? 1000 : 150
+      index == 0 ? 1000 : 150
     );
   }, [index]);
 
@@ -54,7 +54,7 @@ const Index = () => {
 
   return (
     <motion.div
-      variants={{ exit: { opacity: 0 } }}
+      variants={slideUp}
       initial="initial"
       animate="enter"
       exit="exit"

@@ -24,7 +24,7 @@ export default function NavBar({ sectionRefs }) {
     tl.to(navBar.current, {
       y: 0,
       duration: 3,
-      delay: 0.5,
+      delay: 2,
       ease: "power4.inOut",
     });
   });
@@ -53,12 +53,12 @@ export default function NavBar({ sectionRefs }) {
       className="fixed top-0 z-50 flex w-full -translate-y-full items-center justify-between bg-secondary-100 px-5 py-3"
     >
       {/* logo */}
-      <a href="#hero" aria-label="Logo" className="z-50">
-        <h1 className="px-8 py-2 font-grotesk text-3xl font-bold tracking-tight">
+      <a href="#hero" aria-label="Logo" className="z-50" ref={logo}>
+        <h1 className="px-8 py-2  text-3xl font-medium tracking-tight">
           Sumeru Das.
         </h1>
       </a>
-      <nav className=" space-x-7 font-grotesk text-body-3 sm:block">
+      <nav className=" space-x-7  text-body-3 sm:block">
         <a href="#about" className="group relative hidden md:inline-block">
           <span className="text-xl font-semibold">About</span>
           <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
