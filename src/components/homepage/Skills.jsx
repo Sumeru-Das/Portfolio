@@ -3,10 +3,10 @@ import LogoMarquee from "../ui/LogoMarquee";
 
 export default function Skills() {
   return (
-    <section className="mt-[15rem] h-[80vh]">
+    <section className="mt-[15rem] h-[80vh] py-[5rem]">
       <div className="flex w-full flex-col">
         <h1 className="mb-20 flex items-center justify-center text-center text-[5vw] text-[#FE5F2F] sm:text-[3vw] ">
-          <span className="mr-2 rounded-2xl bg-[#FFFFFF] px-3 text-[5vw] text-[#000000]  sm:text-[3vw]">
+          <span className="mr-2 rounded-2xl bg-[#000000] px-3 text-[5vw] text-[#FFFFFF]  sm:text-[3vw]">
             Technologies
           </span>{" "}
           I am familiar with ...
@@ -14,7 +14,7 @@ export default function Skills() {
         <LogoMarquee baseVelocity={-1}>
           <div className="flex items-center gap-x-[10px] pb-5">
             {iconsData.map((item) => (
-              <div className="h-[5rem] w-[5rem] " key={item.id}>
+              <div className="h-[5rem] w-[5rem]" key={item.id}>
                 <img
                   src={item.icon}
                   alt={item.name}
@@ -29,7 +29,7 @@ export default function Skills() {
         <LogoMarquee baseVelocity={1}>
           <div className="flex items-center gap-x-[10px]">
             {iconsData.map((item) => (
-              <div className="h-[5rem] w-[5rem] " key={item.id}>
+              <div className="h-[5rem] w-[5rem]" key={item.id}>
                 <img
                   src={item.icon}
                   alt={item.name}
