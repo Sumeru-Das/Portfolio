@@ -76,7 +76,7 @@ export default function NavBar({ sectionRefs }) {
           className="button group relative hover:bg-transparent"
           href="#contact"
         >
-          <span className="relative w-fit">
+          <span className="relative px-2">
             <span>Let&apos;s Talk.</span>
           </span>
         </a>

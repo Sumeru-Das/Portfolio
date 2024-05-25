@@ -44,7 +44,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="my-[15%] h-[55vh] overflow-hidden md:my-[1%] px-10 md:px-10 xl:px-20 2xl:px-28"
+      className="my-[15%] h-[80vh] overflow-hidden px-10 md:my-[1%] md:px-10 xl:px-20 2xl:px-28"
       aria-label="contact me"
     >
       <div
@@ -128,34 +128,4 @@ export default function Contact() {
       </div>
     </section>
   );
-}
-
-{
-  /* <div className="flex h-full flex-col ">
-        <h1 className="text-3xl">Connect</h1>
-        <h2 className="text-heading-2">Hello,</h2>
-        <p className="bg-red-900 text-heading-2 leading-[1.9rem] py-10">
-          My Name is{" "}
-          <textarea
-            className="h-20 resize-none overflow-hidden rounded-md bg-primary-200 text-black focus:outline-none"
-            id=""
-          ></textarea>{" "}
-          . I work for company{" "}
-          <textarea
-            className="h-20  resize-none overflow-hidden rounded-md bg-primary-200 text-black focus:outline-none"
-            id=""
-          ></textarea>{" "}
-          & need to talk about{" "}
-          <textarea
-            className="h-20  resize-none overflow-hidden rounded-md bg-primary-200 text-black focus:outline-none"
-            id=""
-          ></textarea>{" "}
-          . You can email me at{" "}
-          <textarea
-            className="h-20  resize-none overflow-hidden rounded-md bg-primary-200 text-black focus:outline-none"
-            id=""
-          ></textarea>{" "}
-          .
-        </p>
-      </div> */
 }
