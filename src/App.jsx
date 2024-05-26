@@ -69,8 +69,8 @@ const App = () => {
         <Role forwardedRef={(el) => (sectionRefs.current[0] = el)} />
         <Skills />
         <Works forwardedRef={(el) => (sectionRefs.current[1] = el)} />
-        <Contact />
       </main>
+      <Contact />
       <Footer />
     </div>
   );
