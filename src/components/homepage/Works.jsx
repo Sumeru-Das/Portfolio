@@ -8,7 +8,7 @@ import Projects from "../ui/Projects";
 import TextMask from "../ui/TextMask";
 
 export default function Works({ forwardedRef }) {
-  const phrases = ["About"];
+  const phrases = ["Project"];
   return (
     <section
       ref={forwardedRef}
