@@ -4,17 +4,17 @@ export default function Footer() {
   }
 
   return (
-    <footer className="mt-14 flex items-end justify-between px-5 py-4 text-body-4 sm:flex md:text-body-3">
+    <footer className="mt-14 flex items-end justify-between px-5 py-4 text-body-4 sm:flex md:text-body-3 ">
       <div className="flex flex-col justify-between md:w-[62.5vw] md:flex-row lg:w-[57.5vw]">
         <div className="flex space-x-1 text-center">
           <span>&copy;</span>
           <span>2024</span>
-          <span className="font-extrabold uppercase ">
+          <span className="font-extrabold uppercase text-[#FE5F2F] ">
             Sumeru Das
           </span>
         </div>
         <div>
-          <span className=" text-body-4 2xl:text-body-1 flex items-center gap-2">
+          <span className=" flex items-center gap-2 text-body-4 2xl:text-body-1">
             Site designed and coded with{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -44,7 +44,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="my-[15%] h-[80vh] overflow-hidden px-10 md:my-[1%] md:px-10 xl:px-20 2xl:px-28"
+      className="my-[15%] h-[80vh] overflow-hidden px-10 md:my-[1%] md:px-10 xl:px-20 2xl:px-28 "
       aria-label="contact me"
     >
       <div
@@ -60,7 +60,7 @@ export default function Contact() {
           </h3>
           <p
             ref={body}
-            className="mt-4 max-w-md translate-y-10 text-body-2 text-accent-100 opacity-0 2xl:max-w-2xl 2xl:text-4xl"
+            className="mt-4 max-w-md translate-y-10 text-[#FE5F2F] opacity-0 2xl:max-w-2xl 2xl:text-4xl"
           >
             Currently looking for <br />
             <span className="font-medium">Full-Stack Development</span>{" "}

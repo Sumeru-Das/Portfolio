@@ -12,7 +12,6 @@ import Works from "./components/homepage/Works";
 import Contact from "./components/homepage/Contact";
 import Footer from "./components/ui/Footer";
 import Preloader from "./components/PreLoader/PreLoader";
-import Skills from "./components/homepage/Skills";
 
 const App = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -59,16 +58,15 @@ const App = () => {
   return (
     <div className="bg-secondary-100">
       <div>
-        <AnimatePresence mode="wait">
+        {/* <AnimatePresence mode="wait">
           {isLoading && <Preloader />}
-        </AnimatePresence>
+        </AnimatePresence> */}
       </div>
       <NavBar sectionRefs={sectionRefs.current} />
       <Hero />
       <main className="">
         <Role forwardedRef={(el) => (sectionRefs.current[0] = el)} />
-        <Skills />
-        <Works forwardedRef={(el) => (sectionRefs.current[1] = el)} />
+        <Works />
       </main>
       <Contact />
       <Footer />

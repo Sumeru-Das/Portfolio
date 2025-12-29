@@ -25,18 +25,33 @@ const Hero = () => {
           className="px-5 py-5 text-heading-1 font-medium leading-[1.25em] text-[#10100F] sm:mt-10 sm:px-10 sm:pb-10 sm:text-heading-1 md:leading-[1.08em]"
         >
           Starting out as a <br />
-          <span className="rounded-2xl bg-[#FE5F2F] px-3 py-1 text-heading-3 text-[#000000] sm:text-heading-1">
-            Full-Stack Developer
+          <span className="rounded-2xl bg-[#FE5F2F] px-2 py-1 text-heading-3 text-[#000000] sm:text-heading-1">
+            Front-end Developer
           </span>
           <br />
-          I merge design & databases, <br />
-          propelled by a passion for learning <br />
-          and career growth.
+          I build clean, <br />
+          production-ready web apps <br />
+          that scale.
         </p>
       </div>
       <div className="hidden w-full font-medium sm:text-xl lg:block">
         <div className="flex items-center justify-between sm:p-10">
           <RandomQuote />
+          <a
+            href="mailto:sumerudas2019@gmail.com"
+            className="
+    inline-flex items-center justify-center
+    rounded-2xl
+    bg-white px-6 py-3
+    font-logo font-medium
+    text-black
+    transition-all duration-300
+    hover:-translate-y-1 hover:bg-[#FE5F2F] hover:text-white
+    active:scale-95 
+  "
+          >
+            Hire Me⚡
+          </a>
         </div>
       </div>
     </section>

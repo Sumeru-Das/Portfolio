@@ -1,7 +1,6 @@
 import html5 from "./assets/technologies/html.svg";
 import css3 from "./assets/technologies/css.svg";
 import javascript from "./assets/technologies/javascript.svg";
-import next from "./assets/technologies/next.svg";
 import reactjs from "./assets/technologies/react.svg";
 import tailwindcss from "./assets/technologies/tailwindcss.svg";
 import nodejs from "./assets/technologies/nodejs.svg";
@@ -28,7 +27,6 @@ export const iconsData = [
   { id: 2, icon: css3, name: "CSS3" },
   { id: 3, icon: python, name: "Python" },
   { id: 4, icon: javascript, name: "JavaScript" },
-  { id: 5, icon: next, name: "Next Js" },
   { id: 6, icon: reactjs, name: "React JS" },
   { id: 7, icon: tailwindcss, name: "TailwindCSS" },
   { id: 8, icon: nodejs, name: "Node.js" },
