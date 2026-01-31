@@ -55,12 +55,13 @@ const App = () => {
     }, 2000);
   }, []);
 
+  
   return (
     <div className="bg-secondary-100">
       <div>
-        {/* <AnimatePresence mode="wait">
+        <AnimatePresence mode="wait">
           {isLoading && <Preloader />}
-        </AnimatePresence> */}
+        </AnimatePresence>
       </div>
       <NavBar sectionRefs={sectionRefs.current} />
       <Hero />
